@@ -1,13 +1,17 @@
+import java.util.Scanner;
+
 // Inheritance example from lecture 3/27/2018
 
 public class Person {
   private int age;
   private String name;
   private String address;
+  private static int number;
+  private static int numero;
 
   
   public Person (int a) {
-    age = a;
+    setAge(a);
    System.out.println("in person constructor");
   }
   public String getName() {
@@ -21,4 +25,43 @@ public class Person {
   public void printInfo() {
     System.out.println("I am a person");
   }
+
+
+ // Exception Handling Example
+   public static void getGoodIntGrade (Scanner input) {
+     int numero = 100;
+  boolean gottenBadGrade = false;
+  
+  while (gottenBadGrade== false) {
+    try {
+      numero=(input.nextInt());
+      gottenBadGrade = true;
+    } catch (Exception e) {
+      System.out.println(e);
+    }
+   
+    }
+   
+  
+   }
+  public static int getNumber() {
+    return number;
+  }
+  public static void setNumber(int number) {
+    Person.number = number;
+  }
+  public String getAddress() {
+    return address;
+  }
+  public void setAddress(String address) {
+    this.address = address;
+  }
+  public int getAge() {
+    return age;
+  }
+  public void setAge(int age) {
+    this.age = age;
+  }
 }
+  
+ 

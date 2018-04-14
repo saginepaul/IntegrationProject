@@ -5,7 +5,7 @@ public class SBDemo {
   public static void doDemo() {
     
     StringBuilder sb = new StringBuilder();
-    sb.append("Hello it is Tuesday");
+    sb.append("Hello, Today is a beautiful day");
     sb.append("!");
     System.out.println(sb);
     replace(sb);

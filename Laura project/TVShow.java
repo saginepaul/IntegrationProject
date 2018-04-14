@@ -2,24 +2,49 @@ import java.util.Scanner;
 // Laura Paul - Integration project
 
 public class TVShow {
-  
+
   public static void printInfo(Person p) {
-    System.out.println (p.getName());
+    System.out.println(p.getName());
   }
 
   // "main" indicates where the program starts."main" is also the method name
-  public static void main(String[] args) {
+  public static void main(String[] args) throws InterruptedException {
+    
+    System.out.println("Welcome to my Integration Project !");
 
-    // Inheritance example
+    CalendarDemo.DateTimeDisplay();
+
+    // call --> arguments
+    // header --> parameters
+
+    // program crashes if exception is not being handled
+    int num1 = 5;
+    int num2 = 0;
+    try {
+      System.out.println(num1 / num2);
+    } catch (Exception e) {
+      // descriptive error message
+      System.out.println("Cannot divide by zero.");
+    }
+
+    // Try and Cath Exception Handling example from class 4/3/2018
+    try {
+      int data = 50 / 0;
+    } catch (ArithmeticException e) {
+      System.out.println(e);
+    }
+    System.out.println("Invalid ");
+
+    // Inheritance example from class 3/27/2018
     Person jacques = new Person(21);
     jacques.setName("Jacques");
     jacques.printInfo();
 
     Student marie = new Student();
-    marie.setName("marie");
+    marie.setName("Marie");
     marie.printInfo();
 
-    // Polymorphism example
+    // Polymorphism example from class 3/27/2018
     Person[] people = new Person[2];
     people[0] = jacques;
     people[1] = marie;
@@ -28,13 +53,14 @@ public class TVShow {
       p.printInfo();
     }
 
+    LambdaDemo.LambdaDemo2();
+
     SBDemo.doDemo();
+
     // you only need 1 Scanner input
     Scanner input = new Scanner(System.in);
-
-    System.out.println("Welcome to my Integration Project !");
-
-    // output for prompt
+    
+     // output for prompt
     System.out.println("Enter the name of your favorite TV Show");
 
     // wait for user's input
@@ -70,6 +96,9 @@ public class TVShow {
     } else {
       System.out.println("No show today");
     }
+    
+    System.out.println(" Good Bye . Have a Nice day !");
+
     checkIfMissed(input);
 
     // Create a Kitten object using the Kitten class
@@ -82,9 +111,9 @@ public class TVShow {
     int year = kitten1.calculateYearsOfBirth();
     System.out.println(" The year of birth is " + year);
     System.out.println("The kitten's name is " + kitten1.getName());
-    Examples.demoStrings();
-    Examples.calculator();
-    Examples.demoInt();
+    
+    
+    System.out.println(" Thank you for watching. Have a Nice day !");
 
   }
 
@@ -106,7 +135,7 @@ public class TVShow {
         break;
 
     }
-
+    
   }
 
   // Overload constructors examples
@@ -123,4 +152,5 @@ public class TVShow {
     System.out.println("Volume of boxconstructing2 is " + vol);
 
   }
+  
 }
