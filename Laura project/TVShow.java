@@ -35,16 +35,24 @@ public class TVShow {
     }
     System.out.println("Invalid ");
 
-    // Inheritance example from class 3/27/2018
-    Person jacques = new Person(21);
+    /* Inheritance example from class 3/27/2018
+     * Inheritance: One class acquire the properties of a another class
+     * There are 2 classes in the following example Person and Student
+     */
+    Person jacques = new Person(22);
     jacques.setName("Jacques");
     jacques.printInfo();
 
     Student marie = new Student();
     marie.setName("Marie");
     marie.printInfo();
-
-    // Polymorphism example from class 3/27/2018
+   
+    
+   
+   /* Polymorphism example from class 3/27/2018
+    Polymorphism : ability for an object to take many forms. 
+    In this example , people is the object .
+    */
     Person[] people = new Person[2];
     people[0] = jacques;
     people[1] = marie;

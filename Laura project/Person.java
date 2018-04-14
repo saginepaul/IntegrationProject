@@ -12,7 +12,7 @@ public class Person {
   
   public Person (int a) {
     setAge(a);
-   System.out.println("in person constructor");
+   System.out.println(age + " years old ");
   }
   public String getName() {
     return name;
@@ -23,9 +23,8 @@ public class Person {
   }
 
   public void printInfo() {
-    System.out.println("I am a person");
+    System.out.println(name+ " is an adult");
   }
-
 
  // Exception Handling Example
    public static void getGoodIntGrade (Scanner input) {
