@@ -9,7 +9,7 @@ public class TVShow {
 
   // "main" indicates where the program starts."main" is also the method name
   public static void main(String[] args) throws InterruptedException {
-    
+
     System.out.println("Welcome to my Integration Project !");
 
     CalendarDemo.DateTimeDisplay();
@@ -35,9 +35,10 @@ public class TVShow {
     }
     System.out.println("Invalid ");
 
-    /* Inheritance example from class 3/27/2018
-     * Inheritance: One class acquire the properties of a another class
-     * There are 2 classes in the following example Person and Student
+    /*
+     * Inheritance example from class 3/27/2018 Inheritance: One class acquire
+     * the properties of a another class There are 2 classes in the following
+     * example Person and Student
      */
     Person jacques = new Person(22);
     jacques.setName("Jacques");
@@ -46,13 +47,11 @@ public class TVShow {
     Student marie = new Student();
     marie.setName("Marie");
     marie.printInfo();
-   
-    
-   
-   /* Polymorphism example from class 3/27/2018
-    Polymorphism : ability for an object to take many forms. 
-    In this example , people is the object .
-    */
+
+    /*
+     * Polymorphism example from class 3/27/2018 Polymorphism : ability for an
+     * object to take many forms. In this example , people is the object .
+     */
     Person[] people = new Person[2];
     people[0] = jacques;
     people[1] = marie;
@@ -67,8 +66,8 @@ public class TVShow {
 
     // you only need 1 Scanner input
     Scanner input = new Scanner(System.in);
-    
-     // output for prompt
+
+    // output for prompt
     System.out.println("Enter the name of your favorite TV Show");
 
     // wait for user's input
@@ -104,7 +103,7 @@ public class TVShow {
     } else {
       System.out.println("No show today");
     }
-    
+
     System.out.println(" Good Bye . Have a Nice day !");
 
     checkIfMissed(input);
@@ -119,8 +118,7 @@ public class TVShow {
     int year = kitten1.calculateYearsOfBirth();
     System.out.println(" The year of birth is " + year);
     System.out.println("The kitten's name is " + kitten1.getName());
-    
-    
+
     System.out.println(" Thank you for watching. Have a Nice day !");
 
   }
@@ -143,7 +141,7 @@ public class TVShow {
         break;
 
     }
-    
+
   }
 
   // Overload constructors examples
@@ -160,5 +158,5 @@ public class TVShow {
     System.out.println("Volume of boxconstructing2 is " + vol);
 
   }
-  
+
 }
