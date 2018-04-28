@@ -1,18 +1,27 @@
 import java.util.Scanner;
-// Laura Paul - Integration project
 
-public class TVShow {
+/* Laura Paul - Integration project
+  This main purpose of this  project is to assist users by 
+   providing specific information to the user
+   about their favorite TV shows (show time , summary of last episode,etc..)
+   based on the user's input.
+ */
+
+public class TvShow {
 
   public static void printInfo(Person p) {
     System.out.println(p.getName());
   }
 
-  // "main" indicates where the program starts."main" is also the method name
+  // "main" indicates where the program starts."main" is also the method name.
+  /**Represents an example of exception handling.
+   * @author LauraPaul
+   */
   public static void main(String[] args) throws InterruptedException {
 
     System.out.println("Welcome to my Integration Project !");
 
-    CalendarDemo.DateTimeDisplay();
+    CalendarDemo.dateTimeDisplay();
 
     // call --> arguments
     // header --> parameters
@@ -37,7 +46,7 @@ public class TVShow {
 
     /*
      * Inheritance example from class 3/27/2018 Inheritance: One class acquire
-     * the properties of a another class There are 2 classes in the following
+     * the properties of a another class. There are 2 classes in the following
      * example Person and Student
      */
     Person jacques = new Person(22);
@@ -60,9 +69,9 @@ public class TVShow {
       p.printInfo();
     }
 
-    LambdaDemo.LambdaDemo2();
+    LambdaDemo.lambdaDemo2();
 
-    SBDemo.doDemo();
+    SbDemo.doDemo();
 
     // you only need 1 Scanner input
     Scanner input = new Scanner(System.in);
@@ -79,14 +88,12 @@ public class TVShow {
 
     // Ask for another input from user
     System.out.println("What day is your TV show is on ?");
-    String day = input.nextLine();
+    day = input.nextLine();
     // boolean result = true;
     String today = "Monday";
     if (today != "Monday") {
       System.out.println("No new episode today!");
-    }
-
-    else {
+    } else {
       System.out.println("Your show is on today");
     }
 
@@ -123,7 +130,10 @@ public class TVShow {
 
   }
 
-  // Method
+  
+  /**Represents a method to use a switch statement.
+   * @author Laura Paul
+   */
   public static void checkIfMissed(Scanner input) {
     System.out.println(
         "Enter 1, if you missed the last episode or 2 if you did not miss it");
@@ -140,6 +150,9 @@ public class TVShow {
         System.out.println(" Brand New episode starts today !");
         break;
 
+      default:
+        break;
+
     }
 
   }
@@ -149,6 +162,8 @@ public class TVShow {
   BoxConstructing boxconstructing2 = new BoxConstructing(23, 35, 43);
 
   double vol;
+  private static String day;
+  
   {
 
     vol = boxconstructing1.volume();

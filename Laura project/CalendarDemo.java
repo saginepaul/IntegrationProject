@@ -5,8 +5,11 @@ import java.util.Calendar;
 
 public class CalendarDemo {
 
-  public static void DateTimeDisplay() {
-    String months[] = { "January", "February", "March", "April", "May", "June",
+  /**Return the local date and time.
+   * @author Laura Paul
+   */
+  public static void dateTimeDisplay() {
+    String[] months = { "January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December" };
     Calendar calendar = Calendar.getInstance();
 

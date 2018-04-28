@@ -22,37 +22,50 @@ public class Loops {
     this.isPrime = isPrime;
   }
 
-// for loops -- example
-public void Forloops() {
+  // for loops -- example
+  /**Return boolean expression based on count.
+  * @author laurapaul
+  */
+  public void forloops() {
  
+    num = 11;
 
-  num=11;
-
-  if(num<2)isPrime=false;else isPrime=true;
-
-  for(
-  int i = 2;i<=num/i;i++)
-  {
-    if ((num % i) == 0) {
-      isPrime = false;
-      break;
+    if (num < 2) {
+      isPrime = false; 
+    } else { 
+      isPrime = true;
     }
-  }if(isPrime)System.out.println("Prime");else System.out.println("Not Prime ");
 
-}
+    for (
+       int i = 2;i <= num / i;i++) {
+    
+      if ((num % i) == 0) {
+        isPrime = false;
+        break;
+      }
+    } 
+    if (isPrime) {
+      System.out.println("Prime");
+    } else {
+      System.out.println("Not Prime ");
+    }
+  }
 
-// for-each loop -- examples
-public void ForEachLoops () {
- int nums [] = {1,2,3,4,5,6,7,8,9,10};
- int sum = 0; 
+  // for-each loop -- examples
+  /**Represent a for each loop commonly used to iterate over an Array list.
+   * @author laurapaul
+   */
+  public void forEachLoops() {
+    int[] nums = {1,2,3,4,5,6,7,8,9,10};
+    int sum = 0; 
  
- // use for-each style for to display and sum the values
- for (int x : nums ) {
-   System.out.println ("Value is : " +x);
-   sum += x;
- }
- System.out.println ("Summation: " +sum);
-}
+    // use for-each style for to display and sum the values
+    for (int x : nums) {
+      System.out.println("Value is : " + x);
+      sum += x;
+    }
+    System.out.println("Summation: " + sum);
+  }
 
 }
 

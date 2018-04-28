@@ -1,7 +1,13 @@
 //StringBuilders Examples from Java : The complete Reference 10th edition book
 
-public class SBDemo {
+/**Represents demo of string builders.
+ * @author laurapaul
+ */
+public class SbDemo {
 
+  /**Method to return String builders.
+   * @author laurapaul
+   */
   public static void doDemo() {
     
     StringBuilder sb = new StringBuilder();
