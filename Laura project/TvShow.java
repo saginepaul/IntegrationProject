@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 /* Laura Paul - Integration project
   This main purpose of this  project is to assist users by 
    providing specific information to the user
